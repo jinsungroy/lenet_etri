@@ -32,7 +32,7 @@ void convolution(const float *input_feature, const float *weights, const float *
 						}
 					}
 				}
-				output_feature[output_filter * output_wh * output_wh + row * output_wh + col] = relu(temp + bias[output_filter]);
+				dddoutput_feature[output_filter * output_wh * output_wh + row * output_wh + col] = relu(temp + bias[output_filter]);
 			}
 		}
 	}
